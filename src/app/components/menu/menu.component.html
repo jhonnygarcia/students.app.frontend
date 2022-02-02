@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-  <a class="navbar-brand" href="javascript:void(0)">Home</a>
+  <a class="navbar-brand" routerLink="/reports">{{ 'menu.home' | translate }}</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -14,10 +14,14 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/reports/better-five-students">Informe 1</a>
+        <a class="nav-link" title="{{ 'menu.titleInforme1' | translate }}" routerLink="/reports/better-five-students">{{
+          'menu.informe1' | translate
+        }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/reports/better-ten-students">Informe 2</a>
+        <a class="nav-link" title="{{ 'menu.titleInforme2' | translate }}" routerLink="/reports/better-ten-students">{{
+          'menu.informe2' | translate
+        }}</a>
       </li>
     </ul>
   </div>

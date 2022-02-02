@@ -1,0 +1,24 @@
+{
+  "common": {
+    "filters": "Filtros",
+    "cargar": "Cargar",
+    "reports": "Informes de estudiantes y profesores"
+  },
+  "menu": {
+    "titleInforme1": "Mejores 5 estudiantes por asigntura y semestre",
+    "titleInforme2": "Mejores 10 estudiantes por profesor asignatura y semestre",
+    "informe1": "Informe1",
+    "informe2": "Informe2",
+    "home": "Students.app"
+  },
+  "betterFive": {
+    "asignatura": "Asignatura",
+    "semesters": "Semestres",
+    "nota": "Nota"
+  },
+  "betterTen": {
+    "asignaturas": "Asignaturas",
+    "profesor": "Profesor",
+    "nota": "Nota"
+  }
+}

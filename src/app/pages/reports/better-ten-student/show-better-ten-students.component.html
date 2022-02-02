@@ -1,9 +1,9 @@
 <app-menu></app-menu>
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Filtros</h5>
+    <h5 class="card-title">{{ 'common.filters' | translate }}</h5>
     <div class="row">
-      <label class="control-label col-md-2">Profesor</label>
+      <label class="control-label col-md-2">{{ 'betterTen.profesor' | translate }}</label>
       <div class="col-md-3">
         <select class="form-control" [(ngModel)]="selectedTeacher">
           <option *ngFor="let c of teachers$ | async" [ngValue]="c">{{ c.name + ' ' + c.lastName }}</option>
@@ -12,7 +12,7 @@
     </div>
     <div class="row">
       <div class="col-md-1">
-        <button type="button" class="btn btn-primary" (click)="load(true)">Cargar</button>
+        <button type="button" class="btn btn-primary" (click)="load(true)">{{ 'common.cargar' | translate }}</button>
       </div>
     </div>
   </div>
@@ -23,7 +23,7 @@
     <h5 class="card-title">{{ details.TeacherName }}</h5>
     <div class="row">
       <div class="col-12">
-        <p>Asignaturas:</p>
+        <p>{{ 'betterTen.asignaturas' | translate }}:</p>
         <ul>
           <li *ngFor="let subject of details.Subjects">
             {{ subject.SubjectName }}
@@ -32,7 +32,7 @@
                 {{ semester.Semester }}
                 <ul>
                   <li *ngFor="let student of semester.Students">
-                    Nota: {{ student.Score }} - {{ student.Name + ' ' + student.LastName }}
+                    {{ 'common.nota' | translate }}: {{ student.Score }} - {{ student.Name + ' ' + student.LastName }}
                   </li>
                 </ul>
               </li>

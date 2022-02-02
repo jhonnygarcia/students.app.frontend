@@ -10,6 +10,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MenuModule } from 'src/app/components/menu/menu.module';
 import { ReportListComponent } from './report-list/report-list.component';
 import { TokenInterceptor } from 'src/app/common/interceptors/token.interceptor';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TokenInterceptor } from 'src/app/common/interceptors/token.interceptor'
     FormsModule,
     ReportsRoutingModule,
     HttpClientModule,
-    MenuModule
+    MenuModule,
+    TranslateModule
   ],
   providers: [ReportsServices, {
     provide: HTTP_INTERCEPTORS,
