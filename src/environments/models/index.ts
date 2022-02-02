@@ -1,5 +1,6 @@
 export interface AppConfig {
     production: boolean;
     serverUri: string;
-    apiKey: string;
+    accessTokenNameCache: string;
+    expireInNameCache: string;
 }

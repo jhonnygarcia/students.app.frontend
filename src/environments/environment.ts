@@ -7,7 +7,8 @@ import { AppConfig } from "./models";
 export const environment: AppConfig = {
   production: false,
   serverUri: 'https://localhost:5001',
-  apiKey: 'a754432e-6db3-4ace-b6bc-fb6ca49987ab'
+  accessTokenNameCache: 'ACCESS_TOKEN',
+  expireInNameCache: 'EXPIRE_IN'
 };
 
 /*
