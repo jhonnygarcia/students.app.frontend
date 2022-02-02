@@ -8,7 +8,8 @@ export const environment: AppConfig = {
   production: false,
   serverUri: 'https://localhost:5001',
   accessTokenNameCache: 'ACCESS_TOKEN',
-  expireInNameCache: 'EXPIRE_IN'
+  expireInNameCache: 'EXPIRE_IN',
+  timeCacheInMinute: 5
 };
 
 /*

@@ -3,4 +3,5 @@ export interface AppConfig {
     serverUri: string;
     accessTokenNameCache: string;
     expireInNameCache: string;
+    timeCacheInMinute: number;
 }
